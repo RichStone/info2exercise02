@@ -63,18 +63,12 @@ public class Histogram {
 					for(int numberOfStars = 0; numberOfStars < letterCount[numberOfLetter]; numberOfStars++) {
 						
 						stringOfStars += "*";
-						
-						// add a space every five stars for better clarity
-						if(stringOfStars.length() == 5) {
-							stringOfStars += " "; 
-						}
-						
 					}
 					
-					outputStream.write(" : " + stringOfStars + "\n");
+					outputStream.write(" : " + stringOfStars + "\r\n");
 				}
 				else {
-					System.out.println("No letters counted for this number of letter: " + numberOfLetter);
+					System.out.println("No letters counted for: " + (char)(numberOfLetter + 65));
 				}
 			}
 			
